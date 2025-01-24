@@ -29,5 +29,5 @@ jobs:
           file: Dockerfile  # Dockerfile 路径，如果你的 Dockerfile 在其他位置，请修改
           push: true
           tags: |
-            docker.io/sinoserendipity/gsdock:${{ github.sha }} # 根据实际情况修改镜像名称和标签
-            docker.io/sinoserendipity/gsdock:latest  # 构建并推送 latest 标签
+            docker.io/sinoserendipity/gsdock:${{ github.sha }}
+            docker.io/sinoserendipity/gsdock:latest
