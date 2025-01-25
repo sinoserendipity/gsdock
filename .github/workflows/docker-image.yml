@@ -29,5 +29,4 @@ jobs:
           file: Dockerfile  # Dockerfile 路径，如果你的 Dockerfile 在其他位置，请修改
           push: true
           tags: |
-            docker.io/sinoserendipity/gsdock:${{ github.sha }}
             docker.io/sinoserendipity/gsdock:latest
