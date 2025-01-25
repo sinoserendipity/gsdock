@@ -5,6 +5,10 @@ on:
     branches:
       - main  # 触发 workflow 的分支，可以修改为你自己的主分支
   workflow_dispatch: # 手动触发 workflow
+    inputs:
+      version:
+        description: '请输入版本号'
+        required: true
 
 jobs:
   build-and-publish:
@@ -29,4 +33,4 @@ jobs:
           file: Dockerfile  # Dockerfile 路径，如果你的 Dockerfile 在其他位置，请修改
           push: true
           tags: |
-            docker.io/sinoserendipity/gsdock:latest
+            docker.io/sinoserendipity/gsdock:$version
