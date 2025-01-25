@@ -33,4 +33,4 @@ jobs:
           file: Dockerfile  # Dockerfile 路径，如果你的 Dockerfile 在其他位置，请修改
           push: true
           tags: |
-            docker.io/sinoserendipity/gsdock:$version
+            docker.io/sinoserendipity/gsdock:${{ github.event.inputs.version }}
